@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>图标</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">  
@@ -17,9 +17,24 @@
 </head>
 <body>
 <div class="container">
-	<h3></h3>
-	<p></p>
-	<div></div>
+	<h3>图标</h3>
+	<p>
+		不要和其他组件混合使用，图标用在span上。</br>
+		图标只对内容为空的元素起作用。</br>
+	</p>
+	<div>
+		<button type="button" class="btn btn-default" aria-label="Left Align">
+		  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+		</button>
+		<button type="button" class="btn btn-default btn-lg">
+		  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+		</button>
+		<div class="alert alert-danger" role="alert">
+		  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+		  <span class="sr-only">Error:</span>
+		  Enter a valid email address
+		</div>
+	</div>
 	<hr>
 	<h3></h3>
 	<p></p>

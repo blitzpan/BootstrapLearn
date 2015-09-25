@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>输入框组</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">  
@@ -17,9 +17,26 @@
 </head>
 <body>
 <div class="container">
-	<h3></h3>
+	<h3>带按钮的输入框</h3>
 	<p></p>
-	<div></div>
+	<div>
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="input-group">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">查询</button>
+					</span>
+					<input type="text" class="form-control" placeholder="Search for..."/>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="input-group">
+					<input class="form-control" type="text" placeholder="输入">
+					<span class="input-group-btn"><button type="button" class="btn btn-default">查询</button></span>
+				</div>
+			</div>
+		</div>
+	</div>
 	<hr>
 	<h3></h3>
 	<p></p>
