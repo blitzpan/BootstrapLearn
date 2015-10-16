@@ -15,8 +15,15 @@
 		//background:gray;
 	}
 	*/
-	.panel-body ul li{
-		width:100%;
+	ul{
+		list-style-type: none;
+	}
+	.toInLine h1,h2,h3,h4,h5,h6{
+		display:inline;
+	}
+	.clearMarPad{
+		margin:0px;
+		padding:0px;
 	}
   </style>
 </head>
@@ -103,36 +110,62 @@
 				</div>
 			</div>
 			<div class="panel panel-default">
-				近期文章
-			</div>
-			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">近期文章</h3>
 				</div>
-				<div class="panel-body">
-					右侧
+				<div class="panel-body1">
+					<ul class="list-group" style="margin-bottom:0px">
+					  <li class="list-group-item"><a href="#">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a>2015年1月24日</li>
+					  <li class="list-group-item"><a href="#">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a>2015年1月24日</li>
+					  <li class="list-group-item"><a href="#">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a>2015年1月24日</li>
+					  <li class="list-group-item"><a href="#">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a>2015年1月24日</li>
+					  <li class="list-group-item"><a href="#">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a>2015年1月24日</li>
+					  <li class="list-group-item"><a href="#">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a>2015年1月24日</li>
+					</ul>
 				</div>
 			</div>
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">文章归档</h3>
 				</div>
-				<div class="panel-body">
-					<ul>
-						<li class="list-group-item">2015年1月<span class="badge">14</span></li>
-						<li class="list-group-item">2015年1月<span class="badge">14</span></li>
-						<li class="list-group-item">2015年1月<span class="badge">14</span></li>
-						<li class="list-group-item">2015年1月<span class="badge">14</span></li>
-						<li class="list-group-item">2015年1月<span class="badge">14</span></li>
-					</ul>
+				<div class="panel-body1">
+					<div class="list-group" style="margin-bottom:0px">
+					  <button type="button" class="list-group-item">2015年1月<span class="badge">14</span></button>
+					  <button type="button" class="list-group-item">2015年2月<span class="badge">14</span></button>
+					  <button type="button" class="list-group-item">2015年3月<span class="badge">14</span></button>
+					  <button type="button" class="list-group-item">2015年4月<span class="badge">14</span></button>
+					  <button type="button" class="list-group-item">2015年5月<span class="badge">14</span></button>
+					</div>
 				</div>
 			</div>
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">分类目录</h3>
 				</div>
-				<div class="panel-body">
-					右侧
+				<div class="panel-body1">
+					<div class="list-group" style="margin-bottom:0px">
+					  <button type="button" class="list-group-item">Java<span class="badge">14</span></button>
+					  <button type="button" class="list-group-item">Spring<span class="badge">14</span></button>
+					  <button type="button" class="list-group-item">Redis<span class="badge">14</span></button>
+					  <button type="button" class="list-group-item">Github<span class="badge">14</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">常驻</h3>
+				</div>
+				<div class="panel-body toInLine">
+					<h3><a href=""><span class="label label-default">1234</span></a></h3>
+					<h1><a href=""><span class="label label-primary">2345</span></a></h1>
+					<h6><a href=""><span class="label label-success">3456</span></a></h6>
+					<h3><a href=""><span class="label label-info">4567</span></a></h3>
+					<h5><a href=""><span class="label label-warning">5555</span></a></h5>
+					<h4><a href=""><span class="label label-danger">6666</span></a></h4>
+					<h1><a href=""><span class="label label-default">7777</span></a></h1>
+					<h2><a href=""><span class="label label-default">8888</span></a></h2>
+					<h3><a href=""><span class="label label-default">9999</span></a></h3>
+					<h4><a href=""><span class="label label-default">10</span></a></h4>
 				</div>
 			</div>
 			<div class="panel panel-default">
@@ -140,10 +173,15 @@
 					<h3 class="panel-title">常驻</h3>
 				</div>
 				<div class="panel-body">
-					右侧
+					<ul class="clearMarPad">
+						<li><a href="">CSDN博客</a></li>
+						<li><a href="">我的微博</a></li>
+						<li><a href="">并发编程网</a></li>
+						<li><a href="">皓哥博客</a></li>
+						<li><a href="">百度技术沙龙</a></li>
+					</ul>
 				</div>
 			</div>
-
 		</div>
 	</div>
 </div>
