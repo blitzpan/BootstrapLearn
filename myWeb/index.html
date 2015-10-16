@@ -5,217 +5,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">  
+  <link rel="stylesheet" href="./mainStyle.css">  
   <script src="jquery-2.1.4.js"></script>
   <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+  <script src="./index.js"></script>
   <style>
-	/*
-  	.container{
-		margin:0 auto;
-		width:1024px;
-		//background:gray;
-	}
-	*/
-	.header-logo{
-		float:left;
-		margin:15px 15px 15px 0px;
-	}
-	.header-logo>img{
-		height:64px;
-	}
-	.header-text{
-		margin:15px 15px 15px 0px;
-	}
-	.header-text>h5{
-		font-size:14px;
-	}
-	ul{
-		list-style-type: none;
-	}
-	.clearMarPad{
-		margin:0px;
-		padding:0px;
-	}
-	.listContent p{
-		font-size: 14px;
-	    letter-spacing: 0.5px;
-    	line-height: 24px;
-		text-indent:2em;
-	}
-	.listContent h3{
-		margin:10px 0px;
-		font-size:18px;
-		line-height:34px;
-		white-space:nowrap;
-		overflow:hidden;
-		text-overflow:ellipsis;
-	}
-	.listContent h3>a{
-		text-decoration: none;
-	}
-	//加上下面两个样式实现导航hover的功能
-	.navbar .nav > li .dropdown-menu {
-		margin: 0;
-	}
-	.navbar .nav > li:hover .dropdown-menu {
-		display: block;
-	}
   </style>
   <script>
-	$(function(){
-		loadIndex();
-	});
-	//加载默认主页
-  	function loadIndex(){
-		$('#centerPage').load('./listContent.html');
-	}
   </script>
 </head>
 <body>
 <div class="container">
+	<div class="row" id="logoDiv"></div>
+	<div id="navDiv"></div>
 	<div class="row">
-		<div class="col-lg-8">
-			<div class="header-logo">
-				<img class="img-responsive" src="./image/logo.PNG" alt="logo"/>
-			</div>
-			<div class="header-text">
-				<h3>潘哥的博客</h3>
-				<h5>等我练出6块腹肌就去找领导涨工资</h5>
-			</div>
-		</div>
-		<div class="col-lg-4"></div>
-	</div>
-	<nav class="navbar navbar-default nav-justified">
-	  <div class="container-fluid">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		  <a class="navbar-brand" href="#">首页</a>
-		</div>
-
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">技术<span class="caret"></span></a>
-			  <ul class="dropdown-menu">
-				<li><a href="#">Redis</a></li>
-				<li><a href="#">hadoop</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Java</a></li>
-			  </ul>
-			</li>
-			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文档<span class="caret"></span></a>
-			  <ul class="dropdown-menu">
-				<li><a href="#">Java</a></li>
-				<li class="divider" role="separator"></li>
-				<li><a href="#">hadoop</a></li>
-				<li><a href="#">Redis</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">面试</a></li>
-			  </ul>
-			</li>
-			<li><a href="#">书籍</a></li>
-			<li><a href="#">信仰</a></li>
-			<li><a href="#">关于</a></li>
-		  </ul>
-			  <form class="navbar-form navbar-right" role="search">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="搜索">
-					<span class="input-group-btn">
-						<button type="submit" class="btn btn-default">
-							<span class="glyphicon glyphicon-search"></span>
-						</button>
-					</span>
-				</div>
-			  </form>
-		</div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
-	<div class="row">
-		<div class="col-lg-8">
-			<div id="centerPage"></div>
-		</div>
+		<div class="col-lg-8" id="centerDiv"></div>
 		<div class="col-lg-4">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">我的微博</h3>
-				</div>
-				<div class="panel-body">
-					右侧
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">近期文章</h3>
-				</div>
-				<div class="panel-body1">
-					<ul class="list-group" style="margin-bottom:0px">
-					  <li class="list-group-item"><a href="#">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a>2015年1月24日</li>
-					  <li class="list-group-item"><a href="#">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a>2015年1月24日</li>
-					  <li class="list-group-item"><a href="#">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a>2015年1月24日</li>
-					  <li class="list-group-item"><a href="#">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a>2015年1月24日</li>
-					  <li class="list-group-item"><a href="#">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a>2015年1月24日</li>
-					  <li class="list-group-item"><a href="#">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a>2015年1月24日</li>
-					</ul>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">文章归档</h3>
-				</div>
-				<div class="panel-body1">
-					<div class="list-group" style="margin-bottom:0px">
-					  <button type="button" class="list-group-item">2015年1月<span class="badge">14</span></button>
-					  <button type="button" class="list-group-item">2015年2月<span class="badge">14</span></button>
-					  <button type="button" class="list-group-item">2015年3月<span class="badge">14</span></button>
-					  <button type="button" class="list-group-item">2015年4月<span class="badge">14</span></button>
-					  <button type="button" class="list-group-item">2015年5月<span class="badge">14</span></button>
-					</div>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">分类目录</h3>
-				</div>
-				<div class="panel-body1">
-					<div class="list-group" style="margin-bottom:0px">
-					  <button type="button" class="list-group-item">Java<span class="badge">14</span></button>
-					  <button type="button" class="list-group-item">Spring<span class="badge">14</span></button>
-					  <button type="button" class="list-group-item">Redis<span class="badge">14</span></button>
-					  <button type="button" class="list-group-item">Github<span class="badge">14</span></button>
-					</div>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">常驻</h3>
-				</div>
-				<div class="panel-body">
-					<ul class="clearMarPad">
-						<li><a href="">CSDN博客</a></li>
-						<li><a href="">我的微博</a></li>
-						<li><a href="">并发编程网</a></li>
-						<li><a href="">皓哥博客</a></li>
-						<li><a href="">百度技术沙龙</a></li>
-					</ul>
-				</div>
-			</div>
+			<div id="weiboDiv"></div>
+			<div id="recentDiv"></div>
+			<div id="articleFamilyDiv"></div>
+			<div id="monthDiv"></div>
+			<div id="linkDiv"></div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-lg-12">
-			<div class="panel panel-default">
-				<div class="panel-body text-center">
-					Design by DanceSmile 蜀ICP备11002373号-1
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="row" id="footDiv"></div>
 </div>
 </body>
 </html>
