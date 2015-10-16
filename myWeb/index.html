@@ -60,6 +60,15 @@
 		display: block;
 	}
   </style>
+  <script>
+	$(function(){
+		loadIndex();
+	});
+	//加载默认主页
+  	function loadIndex(){
+		$('#centerPage').load('./listContent.html');
+	}
+  </script>
 </head>
 <body>
 <div class="container">
@@ -75,110 +84,61 @@
 		</div>
 		<div class="col-lg-4"></div>
 	</div>
-			<nav class="navbar navbar-default nav-justified">
-			  <div class="container-fluid">
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-				  <a class="navbar-brand" href="#">首页</a>
-				</div>
+	<nav class="navbar navbar-default nav-justified">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">首页</a>
+		</div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				  <ul class="nav navbar-nav">
-					<li class="dropdown">
-					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">技术<span class="caret"></span></a>
-					  <ul class="dropdown-menu">
-						<li><a href="#">Redis</a></li>
-						<li><a href="#">hadoop</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">Java</a></li>
-					  </ul>
-					</li>
-					<li class="dropdown">
-					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文档<span class="caret"></span></a>
-					  <ul class="dropdown-menu">
-						<li><a href="#">Java</a></li>
-						<li class="divider" role="separator"></li>
-						<li><a href="#">hadoop</a></li>
-						<li><a href="#">Redis</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">面试</a></li>
-					  </ul>
-					</li>
-					<li><a href="#">书籍</a></li>
-					<li><a href="#">信仰</a></li>
-					<li><a href="#">关于</a></li>
-				  </ul>
-					  <form class="navbar-form navbar-right" role="search">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="搜索">
-							<span class="input-group-btn">
-								<button type="submit" class="btn btn-default">
-									<span class="glyphicon glyphicon-search"></span>
-								</button>
-							</span>
-						</div>
-					  </form>
-				</div><!-- /.navbar-collapse -->
-			  </div><!-- /.container-fluid -->
-			</nav>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">技术<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Redis</a></li>
+				<li><a href="#">hadoop</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">Java</a></li>
+			  </ul>
+			</li>
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文档<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Java</a></li>
+				<li class="divider" role="separator"></li>
+				<li><a href="#">hadoop</a></li>
+				<li><a href="#">Redis</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">面试</a></li>
+			  </ul>
+			</li>
+			<li><a href="#">书籍</a></li>
+			<li><a href="#">信仰</a></li>
+			<li><a href="#">关于</a></li>
+		  </ul>
+			  <form class="navbar-form navbar-right" role="search">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="搜索">
+					<span class="input-group-btn">
+						<button type="submit" class="btn btn-default">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+			  </form>
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
 	<div class="row">
 		<div class="col-lg-8">
-			<div class="panel panel-default listContent">
-				<ul class="list-group">
-					<li class="list-group-item">
-						<h3><a href="">Java之美[从菜鸟到高手演练]之atomic包的原理及分析然并卵然并卵然并卵然并卵然并卵然并卵然并卵然并卵</a></h3>
-						<p>
-							作者：二青 个人站点：zhangerqing.cn 邮箱：xtfggef@gmail.com 微博：http://weibo.com/xtfggef Atomic简介 Atomic包是java.util.concurrent下的另一个专门作者：二青 个人站点：zhangerqing.cn 邮箱：xtfggef@gmail.com 微博：http://weibo.com/xtfggef Atomic简介 Atomic包是java.util.concurrent下的另一个专门p者：二青 个人站点：zhangerqing.cn 邮箱：xtfggef@gmail.com 微博：http://weibo.com/xtfggef Atomic简介 Atomic包是java.util.concurrent下的另一个专门作者：二青 个人站点：zhangerqing.cn 邮箱：xtfggef@gmail.com 微博：http://weibo.com/xtfggef Atomic简介 Atomic包是java.util.concurrent下的另一个专门
-
-
-
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h3><a href="">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a></h3>
-						<p>
-							作者：二青 个人站点：zhangerqing.cn 邮箱：xtfggef@gmail.com 微博：http://weibo.com/xtfggef Atomic简介 Atomic包是java.util.concurrent下的另一个专门为 …
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h3><a href="">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a></h3>
-						<p>
-							作者：二青 个人站点：zhangerqing.cn 邮箱：xtfggef@gmail.com 微博：http://weibo.com/xtfggef Atomic简介 Atomic包是java.util.concurrent下的另一个专门为 …
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h3><a href="">Java之美[从菜鸟到高手演练]之atomic包的原理及分析</a></h3>
-						<p>
-							作者：二青 个人站点：zhangerqing.cn 邮箱：xtfggef@gmail.com 微博：http://weibo.com/xtfggef Atomic简介 Atomic包是java.util.concurrent下的另一个专门为 …
-						</p>
-					</li>
-				</ul>
-			</div>
-			<nav>
-			  <ul class="pagination pagination-lg" style="margin:0px auto">
-				<li>
-				  <a href="#" aria-label="Previous">
-					<span aria-hidden="true">&laquo;</span>
-				  </a>
-				</li>
-				<li><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">5</a></li>
-				<li>
-				  <a href="#" aria-label="Next">
-					<span aria-hidden="true">&raquo;</span>
-				  </a>
-				</li>
-			  </ul>
-			</nav>
+			<div id="centerPage"></div>
 		</div>
 		<div class="col-lg-4">
 			<div class="panel panel-default">
