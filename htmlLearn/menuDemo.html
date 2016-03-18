@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">  
+  <script src="jquery-2.1.4.js"></script>
+  <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+  <style>
+  	.container{
+		margin:0 auto;
+		width:800px;
+		//background:gray;
+	}
+	.menuDiv{
+		margin-bottom:2px;
+	}
+  </style>
+  <script>
+	$(function(){
+		$(".menuG").click(function(){
+			var ss = $(this).siblings();
+			var sec = 500;
+			if(ss.length>0 && ss.siblings().eq(1).css("display")=='block'){
+				$(this).children("span").removeClass("glyphicon-chevron-up");
+				$(this).children("span").addClass("glyphicon-chevron-down");
+				ss.each(function(i,item){
+					sec += 200;
+					$(item).hide(sec);
+				});
+			}else{
+				$(this).children("span").removeClass("glyphicon-chevron-down");
+				$(this).children("span").addClass("glyphicon-chevron-up");
+				ss.each(function(i,item){
+					sec += 200;
+					$(item).show(sec);
+				});
+			}
+			
+		});
+  });
+  </script>
+</head>
+<body>
+<div class="container">
+<div class="list-group menuDiv">
+  <a href="javascript:void(0)" class="list-group-item menuG active">
+    Cras jto odio
+	  <span class="glyphicon glyphicon-chevron-up" aria-hidden="true" style="float:right"></span>
+  </a>
+  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item">Morbi leo risus</a>
+  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item">Vestibulum at eros</a>
+</div>
+<div class="list-group menuDiv">
+  <a href="javascript:void(0)" class="list-group-item menuG active">
+    Cras jto odio
+	  <span class="glyphicon glyphicon-chevron-up" aria-hidden="true" style="float:right"></span>
+  </a>
+  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item">Morbi leo risus</a>
+  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item">Vestibulum at eros</a>
+</div>
+<div class="list-group menuDiv">
+  <a href="javascript:void(0)" class="list-group-item menuG active">
+    Cras jto odio
+	  <span class="glyphicon glyphicon-chevron-up" aria-hidden="true" style="float:right"></span>
+  </a>
+  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item">Morbi leo risus</a>
+  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item">Vestibulum at eros</a>
+</div>
+</div>
+</body>
+</html>
